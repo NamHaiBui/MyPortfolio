@@ -10,18 +10,22 @@ const Navbar = () => {
       >
         <p className="blue-gradient_text">NB</p>
       </NavLink>
-      <nav className="">
+      <nav className="flex text-lg gap-7 font-medium">
         <NavLink
           to="/about"
-          className={(isActive) => (isActive ? "text-blue-500" : "text-black")}
+          className={({ isActive }) =>
+            isActive ? "text-blue-500" : "text-black"
+          }
         >
           About
         </NavLink>
       </nav>
-      <nav className="">
+      <nav className="flex text-lg gap-7 font-medium">
         <NavLink
           to="/about"
-          className={(isActive) => (isActive ? "text-blue-500" : "text-black")}
+          className={({ isActive }) =>
+            isActive ? "text-blue-500" : "text-black"
+          }
         >
           Projects
         </NavLink>

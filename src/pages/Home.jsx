@@ -5,8 +5,8 @@ import { Suspense, useState } from "react";
 import Loader from "../components/Loader";
 
 import { Sky, Birb, Island, Plane } from "../models";
+import HomeInfo from "../components/HomeInfo";
 
-//<div className="absolute top-28 left-0 right-0 z-10">POPUP</div>
 const Home = () => {
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
@@ -38,6 +38,9 @@ const Home = () => {
   const [planeScale, planePosition] = adjustPlaneForScreenSize();
   return (
     <section className="w-full h-screen relative">
+      <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
+        {currentStage && <HomeInfo currentStage={currentStage} />}
+      </div>
       <Canvas
         className={`w-fill h-screen bg-transparent ${isRotating ? "cursor-grabbing" : "cursor-grab"}`}
         camera={{ near: 0.1, far: 1000 }}
@@ -53,7 +56,7 @@ const Home = () => {
             intensity={1}
           />
           <Sky isRotating={isRotating} />
-          {/* <Birb /> */}
+          <Birb />
           <Island
             position={islandPosition}
             scale={islandScale}
@@ -63,9 +66,9 @@ const Home = () => {
             setCurrentStage={setCurrentStage}
           />
           <Plane
-            planePosition={planePosition}
-            planeScale={planeScale}
             isRotating={isRotating}
+            planeScale={planeScale}
+            planePosition={planePosition}
             rotation={[0, 20, 0]}
           />
         </Suspense>
