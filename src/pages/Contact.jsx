@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import useAlert from "../hooks/useAlert";
+import CTA from "../components/CTA";
 
 const Contact = () => {
   const formRef = useRef();
@@ -53,11 +54,11 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative flex lg:flex-wor flex-col max-container">
+    <section className="relative flex lg:flex-wor flex-col max-container h-[100vh]">
       {alert.show && <Alert {...alert} />}
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="head-text"> Get in touch</h1>
-        <form className="w-full flex flex-col gap-7 mt-14">
+        <form className="w-full flex flex-col gap-7 mt-7">
           <label className="text-black-500 font-semibold">
             What should I call you by?
             <input
@@ -101,7 +102,7 @@ const Contact = () => {
             <button
               type="submit"
               disabled={isLoading}
-              className="btn"
+              className="btn my-5"
               onFocus={handleFocus}
               onBlur={handleBlur}
               onSubmit={handleSubmit}
@@ -111,6 +112,8 @@ const Contact = () => {
           </label>
         </form>
       </div>
+      <hr className="border-slate-200" />
+      <CTA />
     </section>
   );
 };

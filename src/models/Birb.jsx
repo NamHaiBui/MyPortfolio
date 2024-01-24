@@ -11,22 +11,23 @@ const Birb = () => {
     actions["Take 001"].play();
   }, []);
   useFrame(({ clock, camera }) => {
+    birdRef.current.position.y = Math.sin(clock.elapsedTime) * 0.2 + 2;
+
     if (birdRef.current.position.x > camera.position.x + 10) {
-      birdRef.current.position.y = Math.PI;
-    } else if (birdRef.current.position.x < camera.position.x + 10) {
+      birdRef.current.rotation.y = Math.PI;
+    } else if (birdRef.current.position.x < camera.position.x - 10) {
       birdRef.current.rotation.y = 0;
     }
-    birdRef.current.rotation.y += Math.sin(clock.elapseTime) * 0.2 + 2;
-    if (birdRef.current.rotation.y == 0) {
-      birdRef.current.position.x += 0.1;
-      birdRef.current.position.z -= 0.1;
+    if (birdRef.current.rotation.y === 0) {
+      birdRef.current.position.x += 0.03;
+      birdRef.current.position.z -= 0.03;
     } else {
-      birdRef.current.position.x += -0.1;
-      birdRef.current.position.z -= -0.1;
+      birdRef.current.position.x -= 0.03;
+      birdRef.current.position.z += 0.03;
     }
   });
   return (
-    <mesh position={[-5, 2, 1]} scale={[0.003, 0.003, 0.003]}>
+    <mesh ref={birdRef} position={[-5, 2, 1]} scale={[0.005, 0.005, 0.005]}>
       <primitive object={scene} ref={birdRef} />
     </mesh>
   );

@@ -1,29 +1,27 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
-  car,
+  FPT_logo_2010,
+  aws,
   contact,
   css,
-  estate,
-  express,
+  firebase,
   git,
   github,
   html,
+  images,
   javascript,
   linkedin,
-  mongodb,
-  motion,
-  mui,
   nextjs,
   nodejs,
+  openknect_logo,
   pricewise,
+  python,
   react,
-  redux,
   sass,
   snapgram,
-  summiz,
   tailwindcss,
-  threads,
-  typescript,
+  tensorflow,
+  summiz,
+  Nexus,
 } from "../assets/icons";
 
 export const skills = [
@@ -31,11 +29,6 @@ export const skills = [
     imageUrl: css,
     name: "CSS",
     type: "Frontend",
-  },
-  {
-    imageUrl: express,
-    name: "Express",
-    type: "Backend",
   },
   {
     imageUrl: git,
@@ -58,19 +51,29 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: mongodb,
-    name: "MongoDB",
-    type: "Database",
-  },
-  {
-    imageUrl: motion,
-    name: "Motion",
-    type: "Animation",
-  },
-  {
-    imageUrl: mui,
-    name: "Material-UI",
+    imageUrl: images,
+    name: "Flutter",
     type: "Frontend",
+  },
+  {
+    imageUrl: firebase,
+    name: "Firebase",
+    type: "Cloud Service",
+  },
+  {
+    imageUrl: aws,
+    name: "AWS",
+    type: "Cloud Service",
+  },
+  {
+    imageUrl: python,
+    name: "Python",
+    type: "Programming Language",
+  },
+  {
+    imageUrl: tensorflow,
+    name: "TensorFlow",
+    type: "Machine Learning",
   },
   {
     imageUrl: nextjs,
@@ -88,11 +91,6 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: redux,
-    name: "Redux",
-    type: "State Management",
-  },
-  {
     imageUrl: sass,
     name: "Sass",
     type: "Frontend",
@@ -102,64 +100,31 @@ export const skills = [
     name: "Tailwind CSS",
     type: "Frontend",
   },
-  {
-    imageUrl: typescript,
-    name: "TypeScript",
-    type: "Frontend",
-  },
 ];
 
 export const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#accbe1",
-    date: "March 2020 - April 2021",
+    title: "Backend Developer Intern",
+    company_name: "FPT Corporation",
+    icon: FPT_logo_2010,
+    iconBg: "#DFCEB6E0",
+    date: "May 2022 - August 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Created a cloud API service for a new product feature that used Domain Driven Design and .NET 6, ASP.NET Core MVC, MediatR",
+      "Implemented Ocelot API Gateway's authentication through Azure Active Directory, improved code's maintainability by modularizing HTTP requests and responses, and improved code's performance by handling API Gateway's API calls asynchronously.",
+      "Improved the performance of a micro-service error dispatch system by implementing and customizing Ocelot API Gateway' Exception Handling Service resulting in a 22% increase in code coverage.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#fbc3bc",
-    date: "Jan 2021 - Feb 2022",
+    title: "Full stack Software Developer",
+    company_name: "OpenKnect",
+    icon: openknect_logo,
+    iconBg: "#D9F8FC",
+    date: "May 2023 - August 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#b7e4c7",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#a2d2ff",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and tested front-end development and translated Figma designs into application using Flutter and Dart for 30% of the total application user interface.",
+      "Constructed scalable back-end system to perform CRUD operations that used Firebase Cloud Firestore and Firebase Storage to deliver a no downtime deployment.",
+      "Built and customized security, authentication, and authorization through Firebase Authentication, Firebase Authorization and Identity Vault with an uptime of 99.94%.",
     ],
   },
 ];
@@ -173,62 +138,54 @@ export const socialLinks = [
   {
     name: "GitHub",
     iconUrl: github,
-    link: "https://github.com/YourGitHubUsername",
+    link: "https://github.com/NamHaiBui",
   },
   {
     name: "LinkedIn",
     iconUrl: linkedin,
-    link: "https://www.linkedin.com/in/YourLinkedInUsername",
+    link: "https://www.linkedin.com/in/nam-hai-bui/",
   },
 ];
 
 export const projects = [
-//   {
-//     iconUrl: pricewise,
-//     theme: "btn-back-red",
-//     name: "Amazon Price Tracker",
-//     description:
-//       "Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.",
-//     link: "https://github.com/adrianhajdin/pricewise",
-//   },
-//   {
-//     iconUrl: threads,
-//     theme: "btn-back-green",
-//     name: "Full Stack Threads Clone",
-//     description:
-//       'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-//     link: "https://github.com/adrianhajdin/threads",
-//   },
-//   {
-//     iconUrl: car,
-//     theme: "btn-back-blue",
-//     name: "Car Finding App",
-//     description:
-//       "Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.",
-//     link: "https://github.com/adrianhajdin/project_next13_car_showcase",
-//   },
-//   {
-//     iconUrl: snapgram,
-//     theme: "btn-back-pink",
-//     name: "Full Stack Instagram Clone",
-//     description:
-//       "Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.",
-//     link: "https://github.com/adrianhajdin/social_media_app",
-//   },
-//   {
-//     iconUrl: estate,
-//     theme: "btn-back-black",
-//     name: "Real-Estate Application",
-//     description:
-//       "Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.",
-//     link: "https://github.com/adrianhajdin/projects_realestate",
-//   },
+  {
+    iconUrl: Nexus,
+    theme: "btn-back-red",
+    name: "Phone E-commerce",
+    description:
+      "Build a Fullstack E-commerce website with MicroServices Architecture for optimized uptime and services",
+    link: "https://github.com/NamHaiBui/MicroServices",
+  },
+  {
+    iconUrl: pricewise,
+    theme: "btn-back-green",
+    name: "Money Management App",
+    description:
+      "Build a Fullstack Website with Google Cloud to help management expenses and services",
+    link: "https://github.com/NamHaiBui/my-money",
+  },
   {
     iconUrl: summiz,
-    theme: "btn-back-yellow",
-    name: "AI Summarizer Application",
+    theme: "btn-back-blue",
+    name: "Hand Gesture Recognizer AI",
     description:
-      "App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.",
-    link: "https://github.com/adrianhajdin/project_ai_summarizer",
+      "Build an hand computer vision application utilizing Convex Hull algorithm to dynamically and actively track hand gestures through a video or live stream",
+    link: "https://github.com/NamHaiBui/Finger-Counting",
+  },
+  {
+    iconUrl: summiz,
+    theme: "btn-back-pink",
+    name: "Evolution Algorithm Illustration",
+    description:
+      "Built a website to help visualize and understand the Evolution Algorithm in Artificial Intelligent",
+    link: "https://github.com/NamHaiBui/5-Lane-Evolution-AI-Auto-Driving-",
+  },
+  {
+    iconUrl: snapgram,
+    theme: "btn-back-pink",
+    name: "Full Stack Instagram Clone",
+    description:
+      "Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.",
+    link: "https://github.com/NamHaiBui/test_project_insta_clone",
   },
 ];

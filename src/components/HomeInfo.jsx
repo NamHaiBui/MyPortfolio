@@ -13,12 +13,13 @@ const InfoBox = ({ text, link, btnText }) => (
 const renderContent = {
   1: (
     <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5">
-      Hi, I am <span className="font-semibold">Nam</span>
+      Hi, I am <span className="font-semibold">Nam</span> <br />I am aspiring to
+      become a Software Engineer
     </h1>
   ),
   2: (
     <InfoBox
-      text={"Team-work, determination, and practice are what I stand by"}
+      text={"Team-work, determination, and practice are my principles"}
       link={"/about"}
       btnText={"Learn more"}
     />
@@ -26,7 +27,7 @@ const renderContent = {
   3: (
     <InfoBox
       text={
-        "Learning and implementing for me goes hand in hand. \n With my curiosity, quick learning capacity, and my dive into lower abstractions, these are the results"
+        "Learning and implementing for me goes hand in hand. Here are my works"
       }
       link={"/projects"}
       btnText={"View my works"}
