@@ -22,7 +22,11 @@ import {
   tensorflow,
   summiz,
   Nexus,
-  superstars
+  superstars,
+  typescript,
+  opencv,
+  vue,
+  
 } from "../assets/icons";
 
 export const skills = [
@@ -77,11 +81,6 @@ export const skills = [
     type: "Machine Learning",
   },
   {
-    imageUrl: nextjs,
-    name: "Next.js",
-    type: "Frontend",
-  },
-  {
     imageUrl: nodejs,
     name: "Node.js",
     type: "Backend",
@@ -101,6 +100,26 @@ export const skills = [
     name: "Tailwind CSS",
     type: "Frontend",
   },
+  {
+    imageUrl: typescript,
+    name: "TypeScript",
+    type: "Programming Language",
+    },
+    {
+    imageUrl: nextjs,
+    name: "Next.js", 
+    type: "Frontend",
+    },
+    {
+    imageUrl: vue,
+    name: "Vue.js",
+    type: "Frontend",
+    },
+    {
+    imageUrl: opencv,
+    name: "OpenCV",
+    type: "Computer Vision",
+    }
 ];
 
 export const experiences = [
@@ -134,11 +153,10 @@ export const experiences = [
     title: "Software Engineer Intern", 
     company_name: "Superstars", 
     icon: superstars,  
-    iconBg: "#ffffff", 
+    iconBg: "#E6E6E6", // Changed to light grey
     date: "May 2025 - Aug 2025",
     points: [
-      "Contribute to mobile application development using Flutter framework. Gain expertise in Flutter design and workflow.",
-      "Collaborate with engineering team to learn and implement technology stack and development strategies for mobile application development.",
+      "Contribute to mobile application development using Flutter framework. Gain expertise in Flutter design and workflow with more than 10,000 lines of code.",
       "Develop front-end of mobile application using Dart, Angular, HTML, CSS, JavaScript, and relevant frameworks.",
       "Integrate front-end with backend using Postman API for seamless data flow and API testing.",
       "Participate in weekly sprint meetings to assess progress, discuss product strategy, and contribute to agile development process."

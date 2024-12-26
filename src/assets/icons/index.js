@@ -28,6 +28,10 @@ import tensorflow from "./tensorflow-icon.svg";
 import aws from "./amazon-web-services.svg";
 import Nexus from "./1682317.svg";
 import superstars from "./superstars.svg";
+import typescript from "./typescript.svg";
+import nextjs_icon from "./nextjs_icon.svg";
+import opencv from "./opencv.svg";
+import vue from "./vue.svg";
 
 export {
   Nexus,
@@ -60,4 +64,9 @@ export {
   aws,
   soundon,
   soundoff,
+  typescript,
+  nextjs_icon,
+  opencv,
+  vue,
+  
 };
