@@ -27,9 +27,11 @@ import FPT_logo_2010 from "./FPT_logo_2010.svg";
 import tensorflow from "./tensorflow-icon.svg";
 import aws from "./amazon-web-services.svg";
 import Nexus from "./1682317.svg";
+import superstars from "./superstars.svg";
 
 export {
   Nexus,
+  superstars,
   css,
   firebase,
   git,
